@@ -6,8 +6,8 @@ addpath('solutions/fastmarching_0_implementing')
 warning on
 
 %% Navigating on the grid
-% We use a cartesian grid of size n×n, and defines operators to navigate in the grid.
-% We use a singe index i?{1,…,n2}
+% We use a cartesian grid of size nÃ—n, and defines operators to navigate in the grid.
+% We use a singe index i?{1,â€¦,n2}
 % to index a position on the 2-D grid.
 % Size of the grid.
 
@@ -124,8 +124,8 @@ colormap jet(256);
 % Over a continuous domain, the distance map D(x)
 % to a set of seed points S is the unique solution in the viscosity sense
 % ?x?S,??D(x)?=W(x)and?y?S,D(y)=0.
-% The equation is then discretized on a grid of n×n
-% pixel, and a solution (Dk,?)nk,?=1?Rn×n is found by using an upwind finite difference approximation, that is faithful to the viscosity solution
+% The equation is then discretized on a grid of nÃ—n
+% pixel, and a solution (Dk,?)nk,?=1?RnÃ—n is found by using an upwind finite difference approximation, that is faithful to the viscosity solution
 % ?(k,?)?S~,?(?D)k,??=Wk,?$and?(k,?)?S~,Dk,?=0,
 % where S~ is the set of discrete starting points (defined here by |x0|).
 % To be consisten with the viscosity solution, one needs to use a non-linear upwind gradient derivative. This corresponds to computing the norm of the gradient as
