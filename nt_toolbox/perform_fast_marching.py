@@ -1,7 +1,7 @@
 import numpy as np
 import skfmm as fmm
 
-def perform_fast_marching(W, start_points, periodic=False):
+def perform_fast_marching_isotropic(W, start_points, periodic=False):
     """
         Implementation of the fast marching algorithm in 2Ds using the skfmm library
         W : 2D weight matrix, must be positive
