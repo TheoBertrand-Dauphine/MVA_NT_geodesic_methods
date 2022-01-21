@@ -9,5 +9,5 @@ def perform_fast_marching_isotropic(W, start_points, periodic=False):
     """
     D_temp = np.ones_like(W) # 0-levelsets indicate boundary from which we compute distance
     D_temp[start_points[0,:],start_points[1,:]] = 0
-    return fmm.distance(D_temp, speed=W, periodic=periodic) + 1e-15
+    return fmm.travel_time(D_temp, speed=W, periodic=periodic) + 1e-15
     
