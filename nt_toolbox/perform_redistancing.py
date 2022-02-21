@@ -49,7 +49,7 @@ def perform_redistancing(D):
     I = np.where(V != 0)
     x,y = I[0],I[1]
     start_points = np.vstack((x,y))
-    D1 = perform_fast_marching(np.ones([n,p]), start_points)
+    D1 = perform_fast_marching_isotropic(np.ones([n,p]), start_points)
     D1 = D1*n
     D1[D < 0] = -D1[D < 0]
     
